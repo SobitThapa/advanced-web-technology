@@ -52,12 +52,9 @@
           alert('Failed to fetch user information. Please try again.');
         });
     }
-
-    // Attach event listener to the form submission
     document.getElementById('user-form').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent form submission
-
-      // Call initiateRequest() to fetch data and populate the form fields
+      event.preventDefault(); 
+      
       initiateRequest();
     });
   </script>
